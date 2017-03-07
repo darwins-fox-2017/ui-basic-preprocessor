@@ -1,0 +1,233 @@
+@displayBlock:block;
+@color:#666;
+@colorF:#ffffff;
+@fontFamily:arial;
+@borderSolid:border: 1px solid black;
+@widthMax:100%;
+@px20:20px;
+
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: @displayBlock;
+}
+
+body {
+    color: @color;
+    background-color: #f9f8f6;
+    background-image: url("images/geometry.png");
+    background-position: center;
+    font-family: @fontFamily;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: @px20 auto;
+    border: @px20 - 18 solid #eee;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 1px #3333
+}
+
+header {
+    height: 160px;
+    background: url(images/header.jpg) top no-repeat;
+    background-size: 40%;
+}
+
+h1 {
+    text-indent: -9999px;
+    width: 940px;
+    height: 130px;
+    margin: 0px;
+}
+
+nav, footer {
+    clear: both;
+    color: @colorF;
+    background-color: #555;
+    height: @px20 + 10;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+}
+
+nav li {
+    display: inline;
+    margin-right: @px20 + 20;
+}
+
+nav li a {
+    color: @colorF;
+}
+
+nav li a:hover, nav li a.current {
+    color: #ddd;
+}
+
+a {
+    color: #de6581;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h2 {
+    margin: 10px 0px 5px 0px;
+    padding: 0px;
+}
+
+h3 {
+    margin: 0px 0px 10px 0px;
+    color: #de6581;
+}
+
+div.footer {
+    font-size: 80%;
+    padding: 7px 0px 0px @px20;
+    color: black;
+}
+
+
+/*SYNTAX BARU*/
+
+input[type=text], select {
+    width: @widthMax;
+    padding: 12px @px20;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: @px20;
+}
+
+div.box {
+    border: @borderSolid;
+}
+
+div.paragraph {
+    border: @borderSolid;
+}
+
+div.button {
+    border: @borderSolid;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+div.panels {
+    border: @borderSolid;
+    background: #fff;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+div.pagination {
+    border: @borderSolid;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: @displayBlock;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: @px20 - 18;
+}
+
+
+/* For desktop: */
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: @widthMax - 75;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: @widthMax - 50;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: @widthMax - 25;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: @widthMax;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: @widthMax;
+    }
+}
