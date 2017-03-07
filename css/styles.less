@@ -1,0 +1,116 @@
+@font: sans-serif;
+@val100: 100%;
+@style-none: none;
+@style-hidden: hidden;
+@val0: 0;
+@color-darkgrey: #333;
+@color-white: white;
+@color-black: #111;
+@color-grey: #e3e4e8;
+@color-green:#4CAF50;
+@color-light-green: #41d347;
+@color-panel: #c1c3cc;
+@color-broken-white: #edeff9;
+@left: left;
+@center: center;
+@right: right;
+@block: block;
+@size-padding1: 14px 16px;
+@size-padding2: 15px 32px;
+@size-padding-panel: 2px 20px;
+@size-5: 5px;
+@size-10: 10px;
+@size-16: 16px;
+@size-20: 20px;
+@margin-0-auto: 0 auto;
+@inline-block: inline-block;
+@size-pagination: 287px;
+@size-max:765px;
+
+
+html {
+  font-family: @font;
+  -ms-text-size-adjust: @val100;
+  -webkit-text-size-adjust: @val100;
+}
+
+ul {
+  list-style-type: @style-none;
+  margin: @val0;
+  padding: @val0;
+  overflow: @style-hidden;
+  background-color: @color-darkgrey;
+}
+
+li {
+  float: @left;
+}
+
+li a {
+  display: @block;
+  color: @color-white;
+  text-align: @center;
+  padding: @size-padding1;
+  text-decoration: @style-none;
+}
+
+li a:hover:not(.active) {
+  background-color: @color-black;
+}
+
+.search {
+  background-color: @color-grey;
+  padding: @size-5;
+  border-radius: @size-20;
+  float: @right;
+  margin: @size-10;
+}
+
+#wrapper {
+  background: @color-grey;
+  /*width: 960px;*/
+  margin: @margin-0-auto;
+}
+
+button {
+  background-color: @color-green;
+  border: @style-none;
+  color: @color-white;
+  padding: @size-padding2;
+  text-align: @center;
+  text-decoration: @style-none;
+  display: @inline-block;
+  font-size: @size-16;
+}
+button:hover {
+  background-color: @color-light-green;
+  color: @color-white;
+}
+
+.footer a{
+  text-align: @center;
+  text-decoration: @style-none;
+  display: @block;
+  color: @color-black;
+}
+
+.panel-heading {
+  background-color: @color-panel;
+  padding: @size-padding-panel;
+}
+
+.panel-body {
+  background-color: @color-broken-white;
+  padding: @size-padding-panel;
+}
+
+.pag-center {
+    width: @size-pagination;
+    margin: @margin-0-auto;
+}
+
+@media (max-width: @size-max) {
+  #wrapper {
+    width: @val100;
+  }
+}
