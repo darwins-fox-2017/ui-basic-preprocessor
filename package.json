@@ -1,0 +1,22 @@
+{
+  "name": "ui-basic-preprocessor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isumizumi/ui-basic-preprocessor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isumizumi/ui-basic-preprocessor/issues"
+  },
+  "homepage": "https://github.com/isumizumi/ui-basic-preprocessor#readme",
+  "dependencies": {
+    "less": "^2.7.2"
+  }
+}
